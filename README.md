@@ -1,1 +1,2 @@
 # sushi-card-gitbook-theme
+This is a theme plugin for [GitBook](https://gitbook.com) to be used to create [CoderDojo](https://coderdojo.com) style **Sushi Cards**—an educational content format based on bite-sized ("one card, one concept") double-sided cards.

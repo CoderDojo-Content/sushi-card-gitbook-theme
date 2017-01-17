@@ -41,3 +41,12 @@ bower_components/
 
 # Mac Cruft
 .DS_Store
+
+# Compiled Sushi.css
+
+_assets/ebook/sushi.css
+_assets/website/sushi.css
+
+# Installed Fonts
+_assets/ebook/fonts/
+_assets/website/fonts/

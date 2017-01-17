@@ -1,0 +1,18 @@
+{% extends template.self %}
+
+{% block book_header %}
+    {{super()}}
+    <div class="cd-bar"></div>
+    <div class="series-title">
+        <h1>{{ book.seriesTitle | upper }}</h1>
+    </div>
+    <div class="card-title">
+        <img src="{{ "images/coderdojo-logo.svg"|resolveAsset }}" alt="The CoderDojo logo" class="coderdojo-logo" />
+        <div class="card-info">
+            <h2>{{ page.title }}</h2>
+            <h3>Card {{ page.num }} of {{ book.cardsInSeries }}</h3>
+            <p>I'm learning: {{ book.seriesSubject }}</p>
+        </div>
+    </div>
+    <hr class="divider" />
+{% endblock %}

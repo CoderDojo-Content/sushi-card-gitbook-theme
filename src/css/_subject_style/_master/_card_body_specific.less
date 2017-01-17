@@ -1,0 +1,29 @@
+a{
+    color: @subject-color;
+}
+
+em, strong{
+    color: @subject-color;
+}
+
+
+ol{
+    >li{
+        img{
+            border-color: @subject-color;
+        }
+
+        .sushi-callout{
+            background-color: @subject-color;
+            color: @text-color;
+            a{
+                color: @contrast-color;
+            }
+        }
+
+    }
+    >li::before{
+        color:@text-color;
+        background:@subject-color;
+    }
+}

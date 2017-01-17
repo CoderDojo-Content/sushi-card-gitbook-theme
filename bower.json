@@ -1,0 +1,25 @@
+{
+  "name": "gitbook-plugin-theme-coderdojosushicard",
+  "description": "A theme to create a GitBook that looks like a CoderDojo Sushi Card series",
+  "main": "index.js",
+  "authors": [
+    "Philip Harney"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "CoderDojo",
+    "GitBook"
+  ],
+  "homepage": "https://github.com/PhilipHarney/sushi-card-gitbook-theme",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "league-gothic": "^1.0.0",
+    "lato": "^0.3.0"
+  }
+}

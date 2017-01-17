@@ -1,0 +1,110 @@
+//H5
+@s-font-size:                         				  1rem;
+@s-line-height:                       		  1.2777778rem;
+@s-margin:                		  1.2777778rem auto 0 auto;
+
+//H4
+@m-font-size:                         				  1rem;
+@m-line-height:                       		  1.2777778rem;
+@m-margin:                		  1.2777778rem auto 0 auto;
+
+//H3
+@l-font-size:                         		  1.6111111rem;
+@l-line-height:                       		  2.5555556rem;
+@l-margin:                		  1.2777778rem auto 0 auto;
+
+//H2
+@xl-font-size:                        		  2.6111111rem;
+@xl-line-height:                      		  3.8333333rem;
+@xl-margin:            1.2777778rem auto 1.2777778rem auto;
+
+//H1
+@xxl-font-size:                       		  4.2222222rem;
+@xxl-line-height:                     		  5.1111111rem;
+@xxl-margin:           1.2777778rem auto 2.5555556rem auto;
+
+//Defaults
+@default-font-size:           						  18px;
+@default-line-height:       						  23px;
+@default-margin:                		0 0 1.2777778rem 0;
+
+@import '_base';
+@import '_colors_bar.less';
+
+.card-title{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+
+	.card-info{
+		text-align: right;
+		margin-right: 20px;
+
+		p{
+			margin: 0;
+			font-family: @cd-body-font;
+			font-size: @default-font-size;
+		}
+	}
+
+	.coderdojo-logo{
+		height: 9rem;
+		margin-left: 20px;
+	}
+
+	h2{
+		margin: 0;
+	}
+
+	h3{
+		margin: 0;
+	}
+
+	p{
+		margin: 0;
+	}
+
+}
+
+.divider{
+	border: 0;
+	border-top: 3px solid;
+	margin: 5px 15px 0 15px;
+}
+
+.markdown-section{
+    @import './_sushi_card/_body.less';
+
+	*{
+        font-family: @cd-body-font;
+        font-size: @default-font-size;
+        line-height: @default-line-height;
+    }
+
+    p, ul, ol, pre, table, blockquote{
+        margin: @default-margin;
+    }
+
+    ul ul, ol ol, ul ol, ol ul{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    a, b, i, strong, em, small, code {
+        line-height: 0;
+    }
+
+    sub, sup {
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+    }
+    sup {
+        top: -0.5em;
+    }
+    sub {
+        bottom: -0.25em;
+    }
+}
+

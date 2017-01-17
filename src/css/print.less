@@ -1,0 +1,154 @@
+//H5
+@s-font-size:                         15px;
+@s-line-height:                       23px;
+@s-margin:                23px auto 0 auto;
+
+//H4
+@m-font-size:                         15px;
+@m-line-height:                       23px;
+@m-margin:                23px auto 0 auto;
+
+//H3
+@l-font-size:                         20px;
+@l-line-height:                       46px;
+@l-margin:                23px auto 0 auto;
+
+//H2
+@xl-font-size:                        27px;
+@xl-line-height:                      46px;
+@xl-margin:            23px auto 23px auto;
+
+//H1
+@xxl-font-size:                       36px;
+@xxl-line-height:                     46px;
+@xxl-margin:           23px auto 46px auto;
+
+//Defaults
+@default-font-size:           @m-font-size;
+@default-line-height:       @m-line-height;
+@default-margin:                 @m-margin;
+
+@import '_base';
+
+.cd-bar{
+    height: 5px;
+    overflow: hidden;
+    border-bottom: 2px solid;
+    .bar-segment{
+        width: 25%;
+        float: left;
+        border: 0;
+        padding: 0;
+        margin: 0;
+    }
+    .segment-1{
+        background-color: @cd-bar-1;
+    }
+    .segment-2{
+        background-color: @cd-bar-2;
+    }
+    .segment-3{
+        background-color: @cd-bar-3;
+    }
+    .segment-4{
+        background-color: @cd-bar-4;
+    }
+    
+}
+
+.card-title{
+
+	.card-info{
+		text-align: right;
+		margin-right: 5%;
+        float: right;
+
+        h3{
+            margin: 0;
+            line-height: 100%;
+        }
+
+		p{
+			margin: 0;
+            margin-top: 10px; //tmp– once page numbers back in head, remove
+			font-family: @cd-body-font;
+			font-size: @m-font-size;
+            line-height: 100%;
+		}
+	}
+
+	.coderdojo-logo{
+		max-height: 60px;
+        width: 170px;
+		margin-left: 5%;
+        float: left;
+	}
+
+	h2{
+		margin: 0;
+	}
+
+	h3{
+		margin: 0;
+	}
+
+}
+
+.divider{
+	border: 0;
+	border-top: 3px solid;
+	margin: 2.5% 15px 0 2.5%;
+	width: 95%;
+}
+
+.page{
+    @import './_sushi_card/_body.less';
+
+    *{
+        font-family: @cd-body-font;
+        font-size: @default-font-size;
+        line-height: @default-line-height;
+    }
+
+    p, ul, ol, pre, table, blockquote{
+        margin: @default-margin;
+    }
+
+    ul ul, ol ol, ul ol, ol ul{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    a, b, i, strong, em, small, code {
+        line-height: 0;
+    }
+
+    sub, sup {
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+    }
+    sup {
+        top: -0.5em;
+    }
+    sub {
+        bottom: -0.25em;
+    }
+
+    ol{
+        li{
+            margin: 2em 8% 0 8% ;
+            page-break-inside: avoid;
+            
+            .sushi-callout{
+                h3{
+                    font-family: @cd-body-font;
+                }
+            }
+        }
+    }
+}
+
+.footer-number{
+    text-align: center;
+}

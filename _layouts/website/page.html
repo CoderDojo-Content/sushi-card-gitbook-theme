@@ -1,0 +1,12 @@
+{% extends template.self %}
+
+{% block head %}
+    {{super()}}
+    
+{% endblock %}
+
+{% block book_inner %}
+    <div class="{{ book.seriesSubject | lower | replace(" ", "-")}}">
+        {{super()}}
+    </div>
+{% endblock %}

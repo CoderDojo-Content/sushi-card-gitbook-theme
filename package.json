@@ -1,6 +1,6 @@
 {
   "name": "gitbook-plugin-theme-coderdojosushicard",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A theme to create a GitBook that looks like a CoderDojo Sushi Card series",
   "main": "index.js",
   "scripts": {
